@@ -1,0 +1,45 @@
+{
+  "name": "tal",
+  "version": "1.0.0",
+  "description": "tal tools",
+  "scripts": {
+    "test": "test/index.js"
+  },
+  "bin": {
+    "wbp": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AlexWang1987/wpb.git"
+  },
+  "keywords": [
+    "tal"
+  ],
+  "author": "AlexWang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexWang1987/wpb/issues"
+  },
+  "homepage": "https://github.com/AlexWang1987/wpb#readme",
+  "dependencies": {},
+  "wbp": {
+    "project": "umd",
+    "entries": {
+      "index": "./src/index.js"
+    },
+    "source": "src/",
+    "build": "dist/"
+  },
+  "cli": [
+    {
+      "flag": "-p, --prefix",
+      "desc": "changing or removing prefix --no-prefix, default: wbp-"
+    }
+  ],
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "devDependencies": {}
+}
